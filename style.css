@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-family: "Red Hat Display", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 416px;
+  width: 100%;
+  /* background-color: rgba(255, 0, 0, 0.471); */
+  overflow: hidden;
+}
+.card-image-section {
+  width: 100%;
+}
+.card-image-section img {
+  width: 100%;
+  display: block;
+}
+.card-content-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.card-content-section h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.card-content-section p {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.plan-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 16px;
+}
+.plan-price-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.plan-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.plan-icon-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  place-items: center;
+}
+.plan-name {
+  font-weight: 700;
+  color: black !important;
+}
+.proceed-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+}
+.cancel-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+}
