@@ -9,10 +9,11 @@
   align-items: center;
   min-height: 100vh;
   background-color: hsl(225, 100%, 94%);
-  background-image: url("images/pattern-background-desktop.svg");
+  background-image: url("images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   font-family: "Red Hat Display", sans-serif;
+  padding: 24px;
 }
 .card {
   display: flex;
@@ -44,7 +45,7 @@
   font-size: 24px;
   font-weight: 800;
 }
-.card-content-section p {
+.card-description {
   color: hsl(224, 23%, 55%);
   font-size: 16px;
   line-height: 1.8;
@@ -66,7 +67,7 @@
 }
 .plan-details {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .plan-icon-wrapper {
@@ -79,7 +80,7 @@
 }
 .plan-name {
   font-weight: 700;
-  color: black !important;
+  color: hsl(223, 47%, 23%);
 }
 .proceed-btn {
   width: 100%;
@@ -91,6 +92,8 @@
   border: none;
   cursor: pointer;
   font-family: "Red Hat Display", sans-serif;
+  box-shadow: 0 16px 24px rgba(56, 41, 224, 0.25);
+  transition: all 0.2s ease;
 }
 .cancel-btn {
   width: 100%;
@@ -102,4 +105,14 @@
   border: none;
   cursor: pointer;
   font-family: "Red Hat Display", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .card-content-section {
+    padding: 32px;
+  }
+  .page-wrapper {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+  }
 }
